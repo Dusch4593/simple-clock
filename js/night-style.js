@@ -40,7 +40,6 @@ function moveBg() {
     smallPos += 2;
     body.style.backgroundPosition = medPos + "px 0px";
     smallCloud.style.backgroundPosition = smallPos + "px 0px";
-
 }
 
 function updateStyle() {
