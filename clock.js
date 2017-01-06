@@ -1,5 +1,4 @@
 var meridiem = "AM";
-var clock = document.getElementById('clock');
 
 function startTime() {
     var now = new Date();
@@ -11,9 +10,10 @@ function startTime() {
     minutes = insertZero(minutes);
     seconds = insertZero(seconds);
 
+    var clock = document.getElementById('clock');
     clock.innerHTML = hours + " :" + minutes + " :" + seconds + " " + meridiem;
 
-    var update = setTimeout(startTime, 1000);
+    setTimeout(startTime, 1000);
 }
 
 function insertZero(i) {

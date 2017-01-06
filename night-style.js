@@ -1,8 +1,7 @@
-var clock = document.getElementById('clock');
-var body = document.getElementById('main');
-
 var now = new Date();
-var hour = now.getHours();
+var hours = now.getHours();
+var minutes = now.getMinutes();
+var seconds = now.getSeconds();
 
 function checkNight(h) {
     if (h < 4 || h > 18) {
@@ -13,15 +12,29 @@ function checkNight(h) {
     }
 }
 
-var timeOfDay = checkNight(hour);
+function changeStyle() {
+    var clock = document.getElementById('clock');
+    var body = document.getElementById('main');
+    var timeOfDay = checkNight(hours);
 
-function nightStyle() {
     if (timeOfDay == "night") {
-        body.style.backgroundColor = "black";
         body.style.backgroundImage = "url('stars.jpg')";
         clock.style.color = "#00ff00";
-        clock.style.borderColor = "gray";
+        updateStyle();
+    } else {
+        body.style.backgroundImage = "url('clouds.jpg')";
+        clock.style.color = "white";
+        updateStyle();
     }
 }
 
-nightStyle();
+function updateStyle() {
+    if (minutes == "00" && seconds == "00") {
+        changeStyle();
+    } else {
+        // check time every hour so scenery automatically updates
+        setTimeout(changeStyle, (60*(60-minutes)+(60-seconds))*1000);
+    }
+}
+
+changeStyle();

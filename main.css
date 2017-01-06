@@ -2,18 +2,14 @@ body {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #8de3fc;
-	background-image: url('clouds.jpg');
 }
 
 #clock {
-	/* styled for daytime */
 	font-size: 50px;
 	font-family: 'Press Start 2P', cursive;
-	color: white;
 	border: 5px groove gray;
 	border-radius: 50px;
 	padding: 100px;
 	background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('pixelated.jpg');
-	background-size: 60%;
+	background-size: 70%;
 }
