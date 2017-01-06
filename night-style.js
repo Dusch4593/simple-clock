@@ -18,6 +18,7 @@ var timeOfDay = checkNight(hour);
 function nightStyle() {
     if (timeOfDay == "night") {
         body.style.backgroundColor = "black";
+        body.style.backgroundImage = "url('stars.jpg')";
         clock.style.color = "#00ff00";
         clock.style.borderColor = "gray";
     }
