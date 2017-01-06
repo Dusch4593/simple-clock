@@ -7,7 +7,7 @@ var clock = document.getElementById('clock');
 var body = document.getElementById('main');
 
 function checkNight(h) {
-    if (h < 4 || h > 18) {
+    if (h < 4 || h >= 18) {
     	// after 6PM or before 4 AM
         return "night";
     } else {
