@@ -28,6 +28,9 @@ function checkHours(h) {
         meridiem = "PM";
         h -= 12;
     }
+    else if (h == 0) {
+        h = 12;
+    }
     return h;
 }
 
