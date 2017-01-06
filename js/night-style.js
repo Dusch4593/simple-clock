@@ -19,12 +19,12 @@ function changeStyle() {
     var timeOfDay = checkNight(hours);
 
     if (timeOfDay == "night") {
-        body.style.backgroundImage = "url('stars.jpg')";
+        body.style.backgroundImage = "url('images/stars.jpg')";
         clock.style.color = "#00ff00";
         setInterval(moveBg, 70);
         updateStyle();
     } else {
-        body.style.backgroundImage = "url('med_clouds.png')";
+        body.style.backgroundImage = "url('images/med_clouds.png')";
         clock.style.color = "white";
         setInterval(moveBg, 40);
         updateStyle();
