@@ -5,6 +5,7 @@ var seconds = now.getSeconds();
 
 var clock = document.getElementById('clock');
 var body = document.getElementById('main');
+var smallCloud = document.getElementById('small-cloud');
 
 function checkNight(h) {
     if (h < 4 || h >= 18) {
@@ -25,16 +26,21 @@ function changeStyle() {
         updateStyle();
     } else {
         body.style.backgroundImage = "url('images/med_clouds.png')";
-        clock.style.color = "white";
+        smallCloud.style.backgroundImage = "url('images/small_clouds.png')"
+        clock.style.color = "#26fcff";
         setInterval(moveBg, 40);
         updateStyle();
     }
 }
 
-var pos = 0;
+var medPos = 0;
+var smallPos = 0;
 function moveBg() {
-    pos ++;
-    body.style.backgroundPosition = pos + "px 0px";
+    medPos ++;
+    smallPos += 2;
+    body.style.backgroundPosition = medPos + "px 0px";
+    smallCloud.style.backgroundPosition = smallPos + "px 0px";
+
 }
 
 function updateStyle() {

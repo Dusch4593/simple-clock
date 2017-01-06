@@ -10,12 +10,19 @@ body {
 	background-color: #8de3fc;
 }
 
+#small-cloud {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
 #clock-wrapper {
-	/* will stay same width regardless of font */
+	/* will stay same width and height regardless of font */
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	width: 50%;
+	height: 10%;
 	border: 5px groove gray;
 	border-radius: 50px;
 	padding: 100px;
