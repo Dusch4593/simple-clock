@@ -1,0 +1,11 @@
+/* blue */
+
+#clock-wrapper {
+	border: 5px groove #122933;
+	background: linear-gradient(rgba(43, 106, 135, 0.7), rgba(0, 0, 0, 0.5));
+	background-size: 100%;
+}
+
+#clock {
+	color: #b6fdff;
+}
