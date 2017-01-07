@@ -5,13 +5,19 @@
         <title>Simple Clock</title>
         <link rel="stylesheet" href="css/main.css"/>
         <link rel="shortcut icon" href="favicon.ico"/>
-        <script type="text/javascript" src="js/night-style.js" defer>
+        <script type="text/javascript" src="js/time-style.js" defer>
         </script>
         <script type="text/javascript" src="js/clock.js" defer>
             // if not deferred, js will load before p html element is loaded
         </script>
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     </head>
+
+    <header id="header">
+        <div class="buttons"><button id="weather-button" type="button">Change weather</button></div>
+        <div class="buttons"><button id="theme-button" type="button">Change clock theme</button></div>
+        <div class="buttons"><button id="time-button" type="button"></button></div>
+    </header>
     
     <body id="main">
         <div id="small-cloud"></div>
