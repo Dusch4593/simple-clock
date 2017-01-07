@@ -30,11 +30,15 @@ body {
 	font-family: Arial;
 }
 
-#small-cloud {
+#small-cloud, #rain, #snow{
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	z-index: 1;
+}
+
+#rain, #snow {
+	background-size: 50%;
 }
 
 /* header */
