@@ -14,7 +14,7 @@ var shapeButton = document.getElementById('shape-button');
 var timeButton = document.getElementById('time-button');
 
 function checkNight(h) {
-    if (h < 4 || h >= 18 || h==15) {
+    if (h < 4 || h >= 18) {
     	// after 6PM or before 4 AM
         return "night";
     } else {
