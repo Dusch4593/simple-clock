@@ -11,7 +11,11 @@ function startTime() {
     seconds = insertZero(seconds);
 
     var clock = document.getElementById('clock');
+    var smallClock = document.getElementById('small-clock');
+    var smallerClock = document.getElementById('smaller-clock');
     clock.innerHTML = hours + " : " + minutes + " : " + seconds + " " + meridiem;
+    smallClock.innerHTML = hours + " : " + minutes + " " + meridiem;
+    smallerClock.innerHTML = hours + ":" + minutes + " " + meridiem;
 
     setTimeout(startTime, 1000);
 }
