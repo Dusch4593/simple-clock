@@ -31,12 +31,15 @@ body {
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	background-color: #8de3fc;
 	font-family: Arial;
 }
 
 #small-cloud, #rain, #snow{
 	position: absolute;
+	top: 0;
+	left: 0;
 	height: 100%;
 	width: 100%;
 	z-index: 1;
@@ -53,11 +56,10 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: auto; /* centers between bottom of header and bottom of page */
 	background-color: rgba(100, 100, 100, 0.1);
 	width: 100%;
 	height: 50px;
-	position: absolute;
-	top: 0;
 	padding-top: 10px;
 	padding-bottom: 15px; /* to make up for box-shadow spacing */
 	z-index: 2;
@@ -91,6 +93,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: auto;
 	width: 50%;
 	height: 10%;
 	border: 5px groove gray;
