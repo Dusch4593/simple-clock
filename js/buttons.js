@@ -1,5 +1,3 @@
-document.addEventListener("touchstart", function(){}, true)
-
 // button for changing weather
 var weatherButton = document.getElementById('weather-button');
 var rain = document.getElementById('rain');

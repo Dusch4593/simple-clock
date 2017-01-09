@@ -6,6 +6,6 @@
 	background-size: 100%;
 }
 
-#clock {
+#clock, #small-clock, #smaller-clock {
 	color: white;
 }
